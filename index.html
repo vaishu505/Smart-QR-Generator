@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart QR Code Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <h1>Smart QR Code Generator</h1>
+
+        <button id="themeBtn">
+            🌙 Dark Mode
+        </button>
+    </div>
+
+    <p>
+        Generate QR Codes instantly for URLs, text, notes and more.
+    </p>
+
+    <input
+        type="text"
+        id="qrText"
+        placeholder="Enter text or URL..."
+    >
+
+    <select id="qrSize">
+        <option value="150">Small</option>
+        <option value="220" selected>Medium</option>
+        <option value="300">Large</option>
+    </select>
+
+    <div class="buttons">
+
+        <button onclick="generateQR()">
+            Generate
+        </button>
+
+        <button onclick="downloadQR()">
+            Download
+        </button>
+
+        <button onclick="clearQR()">
+            Clear
+        </button>
+
+    </div>
+
+    <div id="qrcode"></div>
+
+    <div class="profile">
+
+        <h3>Ranga Vaishnavi</h3>
+
+        <p>rangavaishnavi313@gmail.com</p>
+
+    </div>
+
+    <a
+        href="https://digitalheroesco.com"
+        target="_blank"
+    >
+        <button class="dh-btn">
+            Built for Digital Heroes
+        </button>
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
